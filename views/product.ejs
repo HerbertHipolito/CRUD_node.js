@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product name</title>
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="css/body_main.css">
+    <link rel="stylesheet" href="../css/head.css">
+</head>
+<body>
+    
+    <header>
+        <div id="head-top" ><button type="button" id="header-button">Minha conta</button></div>
+        <div id="header-text">
+            <ul id="header-list">
+                <li id="header-li"> <a href="./">Home</a></li>
+                <li id="header-li"> <a href="../product"> Products </a> </li>
+                <li id="header-li"><a href="../register">Register</a></li>
+                <li id="header-li"><a href="../delete">Delete</a></li>
+                <li id="header-li"><a href="./update">Update</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="body-content">
+        <div id="body-product">
+
+            <div id="body-product-image">
+                <img src="../public/images/mackbook.jpg" id="product-image">
+            </div>
+
+            <div id="body-product-product-description">
+                <p id="body-product-product-description-title"><%= product.productname %> </p>
+                <p id="body-product-product-description-price"><%= product.price%></p>
+                <p id="body-product-product-description-text"><%= product.description%></p>
+                <p id="body-product-product-description-inventory">5 em estoque</p>
+                <form action="">
+                    <label for="size">Tamanho</label>
+                    <select name="size" id="body-product-product-description-size">
+                        <option value="p">pequeno</option>
+                        <option value="m">médio</option>
+                        <option value="g">grande</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

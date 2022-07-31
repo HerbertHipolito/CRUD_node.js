@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/body_main.css">
+    <link rel="stylesheet" href="css/grid_products.css">
+</head>
+<body>
+    
+    <header>
+        <div id="head-top" ><button type="button" id="header-button">Minha conta</button></div>
+        <div id="header-text">
+            <ul id="header-list">
+                <li id="header-li"> <a href="./">Home</a></li>
+                <li id="header-li"> <a href="./product"> Products </a> </li>
+                <li id="header-li"><a href="./register">Register</a></li>
+                <li id="header-li"><a href="./delete">Delete</a></li>
+                <li id="header-li"><a href="./update">Update</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="body-content">
+        <div id="body-products">
+            <%productList.forEach(product => {%>
+                <div id="product-div">
+                    <p id="produc-name"><%= product.productname%></p>
+                    <p id="produc-description"><%= product.description%></p>
+                    <p id="produc-prince"><%= product.price%></p>
+                </div>
+            <%})%>
+        </div>
+    </section>
+
+</body>
+</html>
