@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-text{
+    display: block;
+    height: 100%;
+    align-items: center;
+    color: #1b6f52;
+    font-size: 95%;
+    margin:1% 0%;
+}

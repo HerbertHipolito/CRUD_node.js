@@ -9,10 +9,12 @@ body{
 }
 
 #body-content{
+    background-image: url('../images/universer.jpg');
+    display: block;
+    min-height: 80vh;
     text-align: center;
     align-items: center;
     background-color: white;
-    padding: 3%;
     
 }
 

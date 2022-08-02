@@ -1,4 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 #body-products{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+#product-div{
+    color: #2BBC8A;
+    margin: 3% 7%;
+}
+
+.product-feature{
+    background-color: rgb(32, 32, 32);
+    padding: 3%;
+    opacity: 0.8;
 }

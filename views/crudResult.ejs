@@ -7,25 +7,15 @@
     <title>Register new product</title>
     <link rel="stylesheet" href="../css/head.css">
     <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
-    <header>
-        <div id="head-top" ><button type="button" id="header-button">Minha conta</button></div>
-        <div id="header-text">
-            <ul id="header-list">
-                <li id="header-li"> <a href="../">Home</a></li>
-                <li id="header-li"> <a href="../product"> Products </a> </li>
-                <li id="header-li"><a href="../register">Register</a></li>
-                <li id="header-li"><a href="../delete">Delete</a></li>
-                <li id="header-li"><a href="../update">Update</a></li>
-            </ul>
-        </div>
-    </header>
+    <%-header%>
     <div id = "register">
 
         <p id="register-result"><%= crudResult%></p>
 
     </div>
-
+    <%-footer%>
 </body>
 </html>

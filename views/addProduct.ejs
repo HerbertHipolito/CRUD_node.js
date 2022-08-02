@@ -7,33 +7,26 @@
     <title>Register new product</title>
     <link rel="stylesheet" href="css/head.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
 
-    <header>
-        <div id="head-top" ><button type="button" id="header-button">Minha conta</button></div>
-        <div id="header-text">
-            <ul id="header-list">
-                <li id="header-li"> <a href="./">Home</a></li>
-                <li id="header-li"> <a href="./product"> Products </a> </li>
-                <li id="header-li"><a href="./register">Register</a></li>
-                <li id="header-li"><a href="./delete">Delete</a></li>
-                <li id="header-li"><a href="./update">Update</a></li>
-            </ul>
-        </div>
-    </header>
+    <%-header%>
     
     <div id = "register">
 
-        <p id="register-name">Update a product</p>
+        <p id="register-name">Register a new product</p>
 
-        <form id="form" method="post" action="/update/new_product">
+        <form id="form" method="post" action="/register/new_product">
 
-            <label for="productid" id="label-form-input">Product ID</label><br>
-            <input type="text" id="form-input" name="productid"><br>
+            <label for="productname" id="label-form-input">Product Name</label><br>
+            <input type="text" id="form-input" name="productname"><br>
 
             <label for="descriptionproduct" id="label-form-input">Description</label><br>
             <input type="text" id="form-input" name="descriptionproduct"><br>
+            
+            <label for="productvalue" id="label-form-input">Product Value</label><br>
+            <input type="number" step="0.001" id="form-input" name="productvalue"><br>
 
             <label for="productinventory" id="label-form-input">Inventory</label><br>
             <input type="number" id="form-input" name="productinventory"><br>
@@ -44,6 +37,8 @@
         </form>
 
     </div>
+
+    <%-footer%>
 
 </body>
 </html>

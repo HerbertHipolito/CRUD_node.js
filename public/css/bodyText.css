@@ -9,7 +9,8 @@
 
 #body-introdution-text{
     padding: 5%;
-    
+    display: block;
+    min-height: 60vh;
 }
 
 #body-text-paragraphs{
