@@ -28,14 +28,14 @@
         <div id="body-product">
 
             <div id="body-product-image">
-                <img src="../public/images/mackbook.jpg" id="product-image">
+                <img src="../../../public/images/mackbook.jpg" id="product-image">
             </div>
 
             <div id="body-product-product-description">
                 <p id="body-product-product-description-title"><%= product.productname %> </p>
                 <p id="body-product-product-description-price"><%= product.price%></p>
                 <p id="body-product-product-description-text"><%= product.description%></p>
-                <p id="body-product-product-description-inventory">5 em estoque</p>
+                <p id="body-product-product-description-inventory"><%= product.inventory%></p>
                 <form action="">
                     <label for="size">Tamanho</label>
                     <select name="size" id="body-product-product-description-size">
