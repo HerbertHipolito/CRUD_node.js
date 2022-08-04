@@ -1,0 +1,7 @@
+03082022 20:33:10 1568b54f-3894-4ddf-93af-4298cd9dc340 GET	undefined	/delete
+    03082022 20:33:13 2f3e722a-d104-48ac-95bb-3800f9be22da POST	http://localhost:3500	/delete/deleteResult
+    03082022 20:33:15 99325594-6dce-42e9-92a0-c92656b7743c GET	undefined	/product
+    03082022 20:34:32 7fc74d44-c9b6-4a86-ad95-515e856c1550 GET	undefined	/product
+    03082022 20:34:34 2bdf5ece-aa2f-4247-bd73-678c1977d707 GET	undefined	/update
+    03082022 20:41:15 a3e636f1-3b80-4a1b-a760-c9e73e02cabf POST	http://localhost:3500	/update/update_product
+    

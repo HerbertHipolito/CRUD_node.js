@@ -8,6 +8,7 @@ const app = express();
 const mongoose = require('mongoose');
 const PORT = process.env.PORT || 3500;
 const connectDB = require('./config/dbconfig');
+const {logger} = require('./controller/logEvents');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const ejs =  require('ejs');
@@ -17,11 +18,14 @@ const ejs =  require('ejs');
 connectDB();
 
 app.set('view engine','ejs');
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 
 app.use('/', express.static(path.join(__dirname, '/public')));
+
+app.use(logger);
 
 app.use('/',require('./routes/root'));
 app.use('/register',require('./routes/register'));
