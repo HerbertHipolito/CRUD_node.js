@@ -225,4 +225,8 @@
     13082022 23:23:13 f0c854f1-9944-478e-b78a-1565526e4d4a GET	undefined	/update
     13082022 23:23:20 b2b797ff-c97b-4d7b-ba00-4c3d9aaa24c8 GET	undefined	/register
     13082022 23:23:24 34173f55-c349-484d-941e-ed155b917070 GET	undefined	/
+    13082022 23:36:06 b307c7e5-36ed-44fd-85c5-c984b6ba8474 GET	undefined	/
+    13082022 23:36:09 032f8b3d-0df3-4ba3-b5d5-e3cbacc8964e GET	undefined	/delete
+    13082022 23:36:11 d8e4905c-b8d4-44e5-81e8-fac4611f734d GET	undefined	/product
+    13082022 23:36:12 dc940211-1f7b-4c7c-b5bc-8d638216b50a GET	undefined	/update
     
