@@ -11,13 +11,21 @@ body{
 #body-content{
     background-image: url('../images/universer.jpg');
     display: block;
-    min-height: 75vh;
+    min-height: 77vh;
     text-align: center;
     align-items: center;
     background-color: white;
 }
 .results{
     font-size: 210%;
+    margin-top: 20%;
+    align-items: center;
+}
+
+#body-result-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #body-title{

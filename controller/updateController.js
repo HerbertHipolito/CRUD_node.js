@@ -16,16 +16,16 @@ const getController = (req,res) =>{
 
 const postController = async (req,res)=>{
     
-    const {productid,description,inventory} = req.body;
-    id=productid;
+    const {productName,description,inventory} = req.body;
+    productName;
     
-    if (!id) return res.status(401).json({'message':'ID missing'});
+    if (!productName) return res.status(401).json({'message':'Name is missing'});
     if (!inventory && !description) return res.status(401).json({'message':'Inform the inventory or description'});
     if (inventory < 0) return res.status(401).json({'message':'inventory input is invalid'});
 
     try {
         
-        const product = await products.findOne({_id: id}).exec();
+        const product = await products.findOne({"productname":productName});
 
         if (!product) return res.status(404).json({'message':'Product not found'});
 
@@ -38,7 +38,7 @@ const postController = async (req,res)=>{
         const result = await product.save();
         structure(['crudHeader','footer']).then((tags)=>{
             res.render(path.join('..','views','crudResult'),{
-                crudResult:`The product ${id} has sucessfully updated`,
+                crudResult:`The product ${productName} has sucessfully updated`,
                 header:tags['crudHeader'],
                 footer:tags['footer'] 
             });

@@ -19,17 +19,18 @@ getController = (req,res)=>{
 postController = async (req,res) =>{
 
     const {productname,productid} = req.body;
+    var deleteCondition = false;
 
     if (!productid && !productname){
         res.status(400).json({'message':'Product name or id are required'});
     } 
     try{
-        if (productid){
-            const productname = await products.findById(productid).exec().productname;
-            const result =  await products.deleteOne({"_id":productid}).exec();
-        }
+        
         if (productname){
+            const product = await products.findOne({"productname":productname}).exec();
+            if(!product) return res.status(404).json({'message':'Product not Found'});
             const result =  await products.deleteOne({"productname":productname}).exec();
+            deleteCondition = true;
         }
         
         structure(['crudHeader','footer']).then((tags) =>{

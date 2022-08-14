@@ -4,15 +4,26 @@
     justify-content: center;
     flex-direction: column;
     background-color: white;
-    padding: 10px;
-    text-align: center;
     padding: 3%;
+    text-align: center;
     background-image: url('../images/universer.jpg') ;
 }
 
+#parent-register{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    height: 76vh;
+    background-image: url('../images/universer.jpg') ;   
+}
+
 #register-name{
+    margin-bottom: 3%;
     font-size: 220%;
 }
+
 
 #form{
     background-color: rgb(33, 33, 33);
